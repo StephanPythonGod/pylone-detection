@@ -1,0 +1,15 @@
+item {
+    name: "cone-blue",
+    id: 1,
+    display_name: "cone-blue"
+}
+item {
+    name: "cone-orangebig",
+    id: 2,
+    display_name: "cone-orangebig"
+}
+item {
+    name: "cone-yellow",
+    id: 3,
+    display_name: "cone-yellow"
+}
