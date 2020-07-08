@@ -47,7 +47,7 @@ h,w, _ = img.shape
 
 # calculating the avg of the width of a cone and it's diameter in order to catch 
 # a more general value for the cone width
-adjustment_values["cone_width"] = (2**0.5)*(adjustment_values["cone_width"])
+adjustment_values["cone_width"] = ((3/2)**0.5)*(adjustment_values["cone_width"])
 
 # return dict{distance_y_b = .., distance_y = .., distance_b = ...}
 return_dict = {}
