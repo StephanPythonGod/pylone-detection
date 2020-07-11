@@ -29,7 +29,7 @@ def main(argv):
     if output_path == "":
         output_path = r".\output"
 
-    ans = handle_call(path_to_images, output_path)
+    ans = handle_call(path_to_images, output_path, multiple = True)
     print("check your specified output directory or default .\\output")
 
 if __name__ == "__main__":

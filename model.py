@@ -21,7 +21,7 @@ import sys
 from Model.utils import label_map_util
 from Model.utils import visualization_utils as vis_util
 
-def handle_call(image_path, output_path):
+def handle_call(image_path, output_path, multiple = False):
     """
     image_path = the path to the image directory where the to predicted images should be stored
     output_path = the path to directory where the predicted images should be stored
@@ -62,7 +62,7 @@ def handle_call(image_path, output_path):
     
     # if image directory isn't empty, run prediction on the found images
     if (TEST_IMAGE_PATHS):
-        return inference_on_images(TEST_IMAGE_PATHS, output_path, detection_graph, category_index), TEST_IMAGE_PATHS
+        return inference_on_images(TEST_IMAGE_PATHS, output_path, detection_graph, category_index, multiple), TEST_IMAGE_PATHS
 
 
 def run_inference_for_single_image(image, detection_graph):
@@ -94,7 +94,7 @@ def run_inference_for_single_image(image, detection_graph):
 
     return {"boxes":boxes, "scores":scores, "classes":classes, "num":num}
 
-def inference_on_images(images, output_path, detection_graph, category_index):
+def inference_on_images(images, output_path, detection_graph, category_index, multiple):
     """
     images = list of image paths
     output_path = path to output directory
@@ -124,5 +124,6 @@ def inference_on_images(images, output_path, detection_graph, category_index):
         # saving of predicted images
         image_name = image_path.split("\\")[-1]
         cv2.imwrite(os.path.join(output_path , image_name), image)
-        
-        return output_dict
+
+        if multiple == False:
+            return output_dict
