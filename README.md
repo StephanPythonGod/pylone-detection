@@ -31,7 +31,7 @@ For further detail please have a look at the paper for this project.
 ## Set up the Application
 
 ### Mandatory system requirements:
-- Python version 3.5 or higher
+- Python version 3.5 is recomended due to tensorflow
 
 ### Steps to set up the application:
 1. Clone the git repository
