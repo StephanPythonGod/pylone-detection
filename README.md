@@ -31,7 +31,7 @@ For further detail please have a look at the paper for this project.
 ## Set up the Application
 
 ### Mandatory system requirements:
-- Python version 3.7.7 is recomended due to libary compatibility
+- Python version 3.7.7 is recomended due to library compatibility
 
 ### Steps to set up the application:
 1. Clone the git repository
