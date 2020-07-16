@@ -31,14 +31,14 @@ For further detail please have a look at the paper for this project.
 ## Set up the Application
 
 ### Mandatory system requirements:
-- Python version 3.5 or higher
+- Python version 3.7.7 is recomended due to library compatibility
 
 ### Steps to set up the application:
 1. Clone the git repository
     - Move in the git bash to the desired dictionary and execute `git clone https://github.com/StephanDieGeileSau/pylone-detection.git`
 2. Install pip dependencies
     - Move into the pylone-detection dictionary `cd \pylone-detection`
-    - Install the dependencies and python libaries `pip -r requirements.txt`
+    - Install the dependencies and python libaries `pip install -r requirements.txt`
 3. Test the application
     - Execute via python the predict.py file (`python predict.py`)
     - If everything workes you should find now 5 images with boxes in the `.\output` folder
